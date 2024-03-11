@@ -1,0 +1,6 @@
+/usr/bin/bash
+echo "This Script display different outputs"
+echo "shell type: $SHELL"
+echo "system path: $ PATH"
+echo " User: $USER"
+
