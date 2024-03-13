@@ -1,0 +1,89 @@
+'''
+#!/bin/bash
+# Git init
+Git initialization () {
+if [ ! -d .git ]
+then
+git init 
+fi
+}
+#Git configuration
+
+git_config() {
+read -p "Please enter your git username" username
+read -p "Please enter your git useremail" useremail
+
+git config --global username "hellowale"
+git config --global useremail "helloolawale@gmail.com"
+
+}
+#Git branching 
+read -p "Enter your branch name" dev
+git checkout -b dev 
+
+#Add,Push,Commit
+add_commit_push() {
+git add.
+git commit -m "commiting changes"
+git remote add origin "url"
+git push -u origin main
+
+#The script steps
+
+git initialization
+git_config
+git_branching
+
+read -p "Enter your remote repo" remote_repo
+add_commit_push $remote_repo
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+git_init () {
+
+if [ ! -d .git ]
+then
+git init 
+fi 
+}
+
+set_git_config() {
+local_config_key=$1
+local_config_value
+
+read -p "Enter your "Enter your $config_key: "config_value
+git config --global $config_key "$config_value"
+}
+
+git_branching() {
+read -p "Enter the branch name" name
+git checkout -b main
+
+}
+
+Add_commit_push() {
+git add .
+git commit -m "commiting changes"
+git remote add origin $1
+git push -u origin main
+
+#Script Execution
+
+git init
+set_git_config "user.name"
+set_git_value "user.email"
+git_branching
+
+read -p "Enter remote repo" remote_repo
+add_commit_push $remote_repo
