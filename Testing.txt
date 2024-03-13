@@ -1,0 +1,12 @@
+#!/bin/bash
+# The script is authoured by Jethro on the 21st of January, 2024
+# It print 7 of the system variables
+echo "Below are 7 of the System Variables"
+echo “The present user of the system is: $USER “
+echo “The home directory of the present user is: $HOME
+echo “The shell in use is: $SHELL
+echo “The System path is $PATH”
+echo “The present working directory is: $PWD
+echo “The User ID of the present Account is: $UID
+echo “The Host name of the system is: $HOSTNAME 
+
